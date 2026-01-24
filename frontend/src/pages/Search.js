@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from '../components/user/Navbar';
 import { Search as SearchIcon, Loader2 } from 'lucide-react';
-import ArticleCard from '../components/user/ArticleCard';
+import { useNavigate } from 'react-router-dom';
+import { formatDistanceToNow } from 'date-fns';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 const Search = () => {
+  const navigate = useNavigate();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -31,21 +32,22 @@ const Search = () => {
   };
 
   return (
-    <div className="min-h-screen pb-20 md:pb-8">
+    <div className="min-h-screen pb-20 md:pb-8 bg-slate-50">
       <Navbar />
       <div className="max-w-4xl mx-auto px-4 md:px-8 py-8">
-        <h1 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-8" data-testid="search-title">
-          Search News
+        <h1 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-2" data-testid="search-title">
+          खबरें खोजें
         </h1>
+        <p className="text-slate-600 mb-8">Search for news articles</p>
 
         <form onSubmit={handleSearch} className="mb-12" data-testid="search-form">
-          <div className="relative">
+          <div className="relative bg-white rounded-lg shadow-sm">
             <SearchIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-400" size={20} />
             <input
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search for news articles..."
+              placeholder="खबरें खोजें..."
               className="w-full pl-12 pr-4 py-4 text-lg border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D90429] focus:border-transparent"
               data-testid="search-input"
             />
@@ -56,7 +58,7 @@ const Search = () => {
             disabled={loading}
             data-testid="search-submit-btn"
           >
-            {loading ? 'Searching...' : 'Search'}
+            {loading ? 'खोज रहे हैं...' : 'खोजें'}
           </button>
         </form>
 
@@ -69,18 +71,45 @@ const Search = () => {
         {!loading && searched && (
           <div>
             {results.length === 0 ? (
-              <div className="text-center py-16" data-testid="no-results-message">
-                <h2 className="font-serif text-2xl text-slate-900 mb-2">No Results Found</h2>
-                <p className="text-slate-600">Try different keywords</p>
+              <div className="text-center py-16 bg-white rounded-lg shadow-sm" data-testid="no-results-message">
+                <h2 className="font-serif text-2xl text-slate-900 mb-2">कोई परिणाम नहीं मिला</h2>
+                <p className="text-slate-600">अन्य कीवर्ड्स आजमाएं</p>
               </div>
             ) : (
               <div>
                 <h2 className="font-medium text-slate-600 mb-6" data-testid="results-count">
-                  Found {results.length} article{results.length !== 1 ? 's' : ''}
+                  {results.length} खबरें मिलीं
                 </h2>
-                <div className="bento-grid" data-testid="search-results-grid">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6" data-testid="search-results-grid">
                   {results.map((article) => (
-                    <ArticleCard key={article.id} article={article} />
+                    <div
+                      key={article.id}
+                      onClick={() => navigate(`/article/${article.id}`)}
+                      className="bg-white rounded-lg overflow-hidden cursor-pointer group shadow hover:shadow-lg transition-all"
+                    >
+                      <div className="relative h-48">
+                        <img
+                          src={article.image_url}
+                          alt={article.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                        <span className="absolute top-3 left-3 bg-[#D90429] px-2 py-1 rounded text-xs font-bold uppercase text-white">
+                          {article.category}
+                        </span>
+                      </div>
+                      <div className="p-5">
+                        <h3 className="font-serif font-bold text-slate-900 text-lg line-clamp-2 mb-3 group-hover:text-[#D90429] transition-colors">
+                          {article.title}
+                        </h3>
+                        <p className="text-sm text-slate-600 line-clamp-2 mb-3">
+                          {article.body.substring(0, 100)}...
+                        </p>
+                        <span className="text-xs text-slate-500">
+                          {formatDistanceToNow(new Date(article.created_at), { addSuffix: true })}
+                        </span>
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
