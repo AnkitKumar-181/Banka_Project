@@ -147,7 +147,7 @@ const Home = () => {
                         </div>
                         <div className="flex-1">
                           <div className="flex items-center gap-2 mb-1">
-                            <span className="bg-slate-100 text-[#D90429] px-2 py-0.5 rounded text-xs font-bold uppercase">
+                            <span className="bg-slate-100 text-[#C00000] px-2 py-0.5 rounded text-xs font-bold uppercase">
                               {article.category}
                             </span>
                           </div>
