@@ -103,7 +103,7 @@ const Home = () => {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                      <span className="absolute top-2 left-2 bg-[#D90429] px-2 py-1 rounded text-xs font-bold uppercase text-white">
+                      <span className="absolute top-2 left-2 bg-[#C00000] px-2 py-1 rounded text-xs font-bold uppercase text-white">
                         {article.category}
                       </span>
                     </div>
