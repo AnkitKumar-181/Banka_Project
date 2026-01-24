@@ -35,7 +35,7 @@ const CategoryPage = () => {
       <div className="min-h-screen bg-slate-50">
         <Navbar />
         <div className="flex items-center justify-center h-96">
-          <Loader2 className="animate-spin text-[#D90429]" size={48} />
+          <Loader2 className="animate-spin text-[#C00000]" size={48} />
         </div>
       </div>
     );
@@ -45,11 +45,12 @@ const CategoryPage = () => {
     <div className="min-h-screen pb-20 md:pb-8 bg-slate-50">
       <Navbar />
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-8">
-        <div className="mb-8 border-b-2 border-[#D90429] pb-4">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-slate-900" data-testid="category-title">
+        <div className="mb-8 pb-4">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-[#C00000] mb-2" data-testid="category-title">
             {category}
           </h1>
-          <p className="text-slate-600 mt-2">{category} से जुड़ी ताज़ा खबरें</p>
+          <div className="w-24 h-1 bg-[#C00000] mb-3"></div>
+          <p className="text-slate-600 text-lg">{category} से जुड़ी ताज़ा खबरें</p>
         </div>
 
         {articles.length === 0 ? (
@@ -73,12 +74,12 @@ const CategoryPage = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <span className="absolute top-3 left-3 bg-[#D90429] px-2 py-1 rounded text-xs font-bold uppercase text-white">
+                  <span className="absolute top-3 left-3 bg-[#C00000] px-2 py-1 rounded text-xs font-bold uppercase text-white">
                     {article.category}
                   </span>
                 </div>
                 <div className="p-5">
-                  <h3 className="font-serif font-bold text-slate-900 text-lg line-clamp-2 mb-3 group-hover:text-[#D90429] transition-colors">
+                  <h3 className="font-serif font-bold text-slate-900 text-lg line-clamp-2 mb-3 group-hover:text-[#C00000] transition-colors">
                     {article.title}
                   </h3>
                   <p className="text-sm text-slate-600 line-clamp-2 mb-3">

@@ -96,3 +96,28 @@
   min-height: 100vh;
   background: #F8F9FA;
 }
+
+/* Headline Marquee Styles */
+.headline-marquee {
+  display: flex;
+  width: 100%;
+}
+
+.headline-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 40s linear infinite;
+}
+
+.headline-marquee:hover .headline-content {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
