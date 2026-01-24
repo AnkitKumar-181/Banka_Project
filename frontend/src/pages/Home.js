@@ -70,7 +70,7 @@ const Home = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="bg-[#D90429] px-3 py-1.5 rounded text-xs font-bold uppercase tracking-wider" data-testid={`featured-category-${featuredArticle.id}`}>
+                      <span className="bg-[#C00000] px-3 py-1.5 rounded text-xs font-bold uppercase tracking-wider" data-testid={`featured-category-${featuredArticle.id}`}>
                         {featuredArticle.category}
                       </span>
                       <span className="text-sm text-slate-200" data-testid={`featured-time-${featuredArticle.id}`}>
