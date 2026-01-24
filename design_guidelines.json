@@ -1,0 +1,150 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Baka News",
+      "core_values": ["Local Trust", "Immediate Clarity", "Modern Minimalism"],
+      "emotional_tone": "Authoritative yet Approachable",
+      "archetype": "Swiss & High-Contrast"
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Libre Baskerville, serif",
+        "body": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-6xl font-bold tracking-tight leading-tight",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+        "h3": "text-2xl font-semibold tracking-normal",
+        "body_lg": "text-lg leading-relaxed text-slate-700",
+        "body_base": "text-base leading-relaxed text-slate-600",
+        "caption": "text-sm text-slate-500 uppercase tracking-wider"
+      },
+      "rules": [
+        "Use Libre Baskerville ONLY for H1, H2, and featured article titles.",
+        "Use Inter for all UI elements, navigation, metadata, and body text.",
+        "Never center text by default. Left-align for readability.",
+        "Use tight tracking for large headings (-0.02em)."
+      ]
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "name": "Crimson Red",
+          "hex": "#D90429",
+          "usage": "CTAs, Breaking News tags, Active states"
+        },
+        "secondary": {
+          "name": "Deep Blue",
+          "hex": "#002FA7",
+          "usage": "Official/Government news, Trust indicators"
+        },
+        "neutral": {
+          "bg_main": "#FFFFFF",
+          "bg_secondary": "#F8F9FA",
+          "text_main": "#0F172A",
+          "text_secondary": "#475569",
+          "border": "#E2E8F0"
+        },
+        "dashboard": {
+          "sidebar_bg": "#111827",
+          "sidebar_text": "#F3F4F6",
+          "active_item": "#1F2937"
+        }
+      },
+      "gradients": {
+        "hero_overlay": "linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 50%)",
+        "subtle_glow": "radial-gradient(circle at 50% 50%, rgba(217, 4, 41, 0.15), transparent 70%)"
+      },
+      "forbidden": ["#7351B7", "#1B93A4"]
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "px-4 md:px-8 lg:px-12",
+        "section_gap": "py-16 md:py-24",
+        "element_gap": "gap-6 md:gap-8"
+      },
+      "grids": {
+        "bento_news": "grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 auto-rows-[minmax(200px,auto)]",
+        "dashboard_table": "w-full border-collapse text-sm"
+      },
+      "containers": {
+        "max_width": "max-w-7xl mx-auto",
+        "card_style": "bg-white border border-slate-200 rounded-none md:rounded-lg overflow-hidden hover:border-slate-300 transition-colors duration-200"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-[#D90429] text-white hover:bg-[#B90322] rounded-full px-6 py-2.5 font-medium transition-all shadow-sm hover:shadow-md",
+        "secondary": "bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 rounded-full px-6 py-2.5 font-medium transition-all",
+        "ghost": "text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-md px-4 py-2 transition-colors"
+      },
+      "cards": {
+        "news_card": "group relative flex flex-col gap-3 bg-transparent",
+        "dashboard_card": "bg-white p-6 rounded-xl border border-slate-100 shadow-sm"
+      },
+      "inputs": {
+        "default": "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+      }
+    },
+    "visual_enhancers": {
+      "shadows": {
+        "soft": "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
+        "hover": "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
+      },
+      "borders": {
+        "subtle": "1px solid #E2E8F0",
+        "active": "1px solid #D90429"
+      },
+      "radius": {
+        "default": "0.5rem",
+        "large": "1rem",
+        "pill": "9999px"
+      }
+    },
+    "motion": {
+      "transitions": "transition-all duration-300 ease-out",
+      "hover_lift": "hover:-translate-y-1 hover:shadow-lg",
+      "fade_in": "animate-in fade-in duration-500 slide-in-from-bottom-4"
+    },
+    "media": {
+      "image_urls": {
+        "hero_news": [
+          "https://images.unsplash.com/photo-1760782066463-c03e5e72485c?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "https://images.unsplash.com/photo-1760780310851-1203ef0bd2ee?crop=entropy&cs=srgb&fm=jpg&q=85"
+        ],
+        "local_categories": {
+          "agriculture": "https://images.unsplash.com/photo-1707721690746-cdbdabadebc2?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "sports": "https://images.unsplash.com/photo-1753443279872-6f9db1dfb020?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "politics": "https://images.unsplash.com/photo-1760262491926-3e3a85f4b26c?crop=entropy&cs=srgb&fm=jpg&q=85"
+        },
+        "dashboard_login": "https://images.unsplash.com/photo-1759668358583-09cdcae2ba36?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "placeholders": [
+          "https://images.unsplash.com/photo-1760782064377-7b24dae35db8?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "https://images.unsplash.com/photo-1753443278144-6e04197302b5?crop=entropy&cs=srgb&fm=jpg&q=85"
+        ]
+      }
+    },
+    "accessibility": {
+      "contrast_check": "Ensure all text has at least 4.5:1 contrast ratio.",
+      "focus_states": "Visible focus rings on all interactive elements.",
+      "aria_labels": "Required for all icon-only buttons."
+    },
+    "instructions_to_main_agent": [
+      "Implement the 'Tetris' grid for the News Home page: Featured article spans 2 cols, 2 rows.",
+      "Use the 'Crimson Red' (#D90429) sparingly - only for CTAs and 'Breaking' tags.",
+      "Ensure the Dashboard Sidebar is dark (#111827) to distinguish it from the light content area.",
+      "Use 'Libre Baskerville' for all article headlines. Import it from Google Fonts.",
+      "Do not use gradients for backgrounds. Keep it flat and clean (Swiss Style).",
+      "For the Editor Dashboard, use Shadcn Table and Form components, but style them to be minimal (remove excess borders).",
+      "Mobile responsiveness is priority #1. Test the grid collapse behavior."
+    ],
+    "universal_guidelines": [
+      "Avoid 'AI slop' - no generic centered layouts.",
+      "No gradients on dark colors.",
+      "Use glassmorphism for sticky headers (backdrop-blur-md bg-white/80).",
+      "Add data-testid to all interactive elements.",
+      "Use sonner for toasts."
+    ]
+  }
+}
