@@ -27,7 +27,7 @@ const EditorSidebar = () => {
         <Link to="/" className="flex items-center gap-2" data-testid="sidebar-home-link">
           <Newspaper className="text-[#D90429]" size={28} />
           <div>
-            <h1 className="font-serif text-xl font-bold text-white">Baka News</h1>
+            <h1 className="font-serif text-xl font-bold text-white">Banka News</h1>
             <p className="text-xs text-gray-400">Editor Panel</p>
           </div>
         </Link>

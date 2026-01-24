@@ -50,13 +50,14 @@ const EditorLogin = () => {
       <div className="hidden lg:block lg:w-1/2 relative">
         <img
           src="https://images.unsplash.com/photo-1759668358583-09cdcae2ba36?crop=entropy&cs=srgb&fm=jpg&q=85"
-          alt="Baka News"
+          alt="Banka News"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         <div className="absolute bottom-12 left-12 text-white">
-          <h1 className="font-serif text-5xl font-bold mb-4">Baka News</h1>
+          <h1 className="font-serif text-5xl font-bold mb-2">Banka News</h1>
           <p className="text-xl text-white/90">Editor Dashboard</p>
+          <p className="text-sm text-white/80 mt-2">Banka ki Awaaz | Bihar ka Vishwasniya News Portal</p>
         </div>
       </div>
 
@@ -101,7 +102,7 @@ const EditorLogin = () => {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D90429] focus:border-transparent"
-                placeholder="editor@bakanews.com"
+                placeholder="editor@bankanews.com"
                 data-testid="editor-email-input"
               />
             </div>
@@ -159,7 +160,7 @@ const EditorLogin = () => {
 
           <div className="mt-6 text-center">
             <Link to="/" className="text-slate-600 hover:text-slate-900 text-sm" data-testid="back-to-news-link">
-              ← Back to Baka News
+              ← Back to Banka News
             </Link>
           </div>
         </div>

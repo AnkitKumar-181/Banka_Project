@@ -39,18 +39,18 @@ const EditorDashboard = () => {
       bgColor: 'bg-blue-50',
     },
     {
-      label: 'Bihar',
-      value: articles.filter((a) => a.category === 'Bihar').length,
-      icon: TrendingUp,
-      color: 'text-green-600',
-      bgColor: 'bg-green-50',
-    },
-    {
       label: 'Banka',
       value: articles.filter((a) => a.category === 'Banka').length,
       icon: TrendingUp,
       color: 'text-purple-600',
       bgColor: 'bg-purple-50',
+    },
+    {
+      label: 'Bihar',
+      value: articles.filter((a) => a.category === 'Bihar').length,
+      icon: TrendingUp,
+      color: 'text-green-600',
+      bgColor: 'bg-green-50',
     },
     {
       label: 'This Week',
@@ -74,7 +74,7 @@ const EditorDashboard = () => {
         <h1 className="font-serif text-4xl font-bold text-slate-900 mb-2" data-testid="dashboard-title">
           Dashboard
         </h1>
-        <p className="text-slate-600">Welcome to Baka News Editor Dashboard</p>
+        <p className="text-slate-600">Welcome to Banka News Editor Dashboard</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
