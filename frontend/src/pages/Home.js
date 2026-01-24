@@ -123,8 +123,8 @@ const Home = () => {
             {/* Trending Sidebar - Right Column */}
             <div className="lg:col-span-1">
               <div className="bg-white rounded-lg shadow-lg p-5 sticky top-20">
-                <div className="flex items-center gap-2 mb-5 pb-3 border-b-2 border-[#D90429]">
-                  <TrendingUp className="text-[#D90429]" size={24} />
+                <div className="flex items-center gap-2 mb-5 pb-3 border-b-2 border-[#C00000]">
+                  <TrendingUp className="text-[#C00000]" size={24} />
                   <h3 className="font-serif text-2xl font-bold text-slate-900">ट्रेंडिंग</h3>
                 </div>
                 <div className="space-y-4">
