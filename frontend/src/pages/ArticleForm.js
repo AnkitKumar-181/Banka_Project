@@ -188,7 +188,7 @@ const ArticleForm = () => {
               required
               value={formData.title}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D90429] focus:border-transparent"
+              className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C00000] focus:border-transparent"
               placeholder="Enter article headline"
               data-testid="article-title-input"
             />
@@ -203,7 +203,7 @@ const ArticleForm = () => {
               name="category"
               value={formData.category}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D90429] focus:border-transparent"
+              className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C00000] focus:border-transparent"
               data-testid="article-category-select"
             >
               <option value="Bihar">Bihar</option>
@@ -224,7 +224,7 @@ const ArticleForm = () => {
               value={formData.body}
               onChange={handleChange}
               rows={12}
-              className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D90429] focus:border-transparent resize-none"
+              className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C00000] focus:border-transparent resize-none"
               placeholder="Write your article content here..."
               data-testid="article-body-textarea"
             />
@@ -254,12 +254,12 @@ const ArticleForm = () => {
             ) : (
               <label
                 htmlFor="image"
-                className="flex flex-col items-center justify-center w-full max-w-md h-64 border-2 border-dashed border-slate-300 rounded-lg cursor-pointer hover:border-[#D90429] transition-colors"
+                className="flex flex-col items-center justify-center w-full max-w-md h-64 border-2 border-dashed border-slate-300 rounded-lg cursor-pointer hover:border-[#C00000] transition-colors"
                 data-testid="image-upload-area"
               >
                 <div className="flex flex-col items-center justify-center pt-5 pb-6">
                   {uploading ? (
-                    <Loader2 className="animate-spin text-[#D90429] mb-3" size={48} />
+                    <Loader2 className="animate-spin text-[#C00000] mb-3" size={48} />
                   ) : (
                     <ImageIcon className="text-slate-400 mb-3" size={48} />
                   )}
@@ -284,7 +284,7 @@ const ArticleForm = () => {
             <button
               type="submit"
               disabled={loading || uploading}
-              className="bg-[#D90429] text-white hover:bg-[#B90322] rounded-full px-8 py-3 font-medium transition-all shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+              className="bg-[#C00000] text-white hover:bg-[#8B0000] rounded-full px-8 py-3 font-medium transition-all shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
               data-testid="submit-article-btn"
             >
               {loading || uploading ? (

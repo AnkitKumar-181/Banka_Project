@@ -99,7 +99,7 @@ const EditorDashboard = () => {
           <h2 className="font-serif text-2xl font-semibold text-slate-900">Recent Articles</h2>
           <button
             onClick={() => navigate('/editor/article/new')}
-            className="flex items-center gap-2 bg-[#D90429] text-white hover:bg-[#B90322] rounded-full px-4 py-2 font-medium transition-all"
+            className="flex items-center gap-2 bg-[#C00000] text-white hover:bg-[#8B0000] rounded-full px-4 py-2 font-medium transition-all"
             data-testid="new-article-btn"
           >
             <Plus size={18} />
@@ -115,7 +115,7 @@ const EditorDashboard = () => {
               <p className="text-slate-600 mb-4">No articles yet</p>
               <button
                 onClick={() => navigate('/editor/article/new')}
-                className="bg-[#D90429] text-white hover:bg-[#B90322] rounded-full px-6 py-2.5 font-medium transition-all"
+                className="bg-[#C00000] text-white hover:bg-[#8B0000] rounded-full px-6 py-2.5 font-medium transition-all"
                 data-testid="create-first-article-btn"
               >
                 Create Your First Article
@@ -127,7 +127,7 @@ const EditorDashboard = () => {
                 <div
                   key={article.id}
                   onClick={() => navigate(`/article/${article.id}`)}
-                  className="flex gap-4 p-4 rounded-lg border border-slate-200 hover:border-[#D90429] cursor-pointer transition-colors"
+                  className="flex gap-4 p-4 rounded-lg border border-slate-200 hover:border-[#C00000] cursor-pointer transition-colors"
                   data-testid={`recent-article-${article.id}`}
                 >
                   <img
@@ -137,7 +137,7 @@ const EditorDashboard = () => {
                   />
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="text-xs uppercase tracking-wider bg-[#D90429] text-white px-2 py-1 rounded-sm">
+                      <span className="text-xs uppercase tracking-wider bg-[#C00000] text-white px-2 py-1 rounded-sm">
                         {article.category}
                       </span>
                       <span className="text-xs text-slate-500">

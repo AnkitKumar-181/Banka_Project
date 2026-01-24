@@ -34,7 +34,7 @@ const ArticleDetail = () => {
       <div className="min-h-screen bg-slate-50">
         <Navbar />
         <div className="flex items-center justify-center h-96">
-          <Loader2 className="animate-spin text-[#D90429]" size={48} />
+          <Loader2 className="animate-spin text-[#C00000]" size={48} />
         </div>
       </div>
     );
@@ -48,7 +48,7 @@ const ArticleDetail = () => {
           <h2 className="font-serif text-3xl text-slate-900 mb-4">Article Not Found</h2>
           <button
             onClick={() => navigate('/')}
-            className="bg-[#D90429] text-white hover:bg-[#B90322] rounded-full px-6 py-2.5 font-medium transition-all"
+            className="bg-[#C00000] text-white hover:bg-[#8B0000] rounded-full px-6 py-2.5 font-medium transition-all"
             data-testid="back-to-home-btn"
           >
             Back to Home
@@ -64,7 +64,7 @@ const ArticleDetail = () => {
       <article className="max-w-4xl mx-auto px-4 md:px-8 py-8" data-testid="article-detail">
         <button
           onClick={() => navigate(-1)}
-          className="flex items-center gap-2 text-slate-600 hover:text-[#D90429] mb-6 transition-colors font-medium"
+          className="flex items-center gap-2 text-slate-600 hover:text-[#C00000] mb-6 transition-colors font-medium"
           data-testid="back-button"
         >
           <ArrowLeft size={20} />
@@ -74,7 +74,7 @@ const ArticleDetail = () => {
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="p-6 md:p-8">
             <div className="mb-6">
-              <span className="inline-block bg-[#D90429] text-white px-3 py-1.5 rounded text-xs font-bold uppercase tracking-wider mb-4" data-testid="article-category">
+              <span className="inline-block bg-[#C00000] text-white px-3 py-1.5 rounded text-xs font-bold uppercase tracking-wider mb-4" data-testid="article-category">
                 {article.category}
               </span>
               <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-900 mb-4" data-testid="article-title">

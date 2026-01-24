@@ -83,7 +83,7 @@ const EditorLogin = () => {
                   required={!isLogin}
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D90429] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C00000] focus:border-transparent"
                   placeholder="Enter your name"
                   data-testid="editor-name-input"
                 />
@@ -101,7 +101,7 @@ const EditorLogin = () => {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D90429] focus:border-transparent"
+                className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C00000] focus:border-transparent"
                 placeholder="editor@bankanews.com"
                 data-testid="editor-email-input"
               />
@@ -119,7 +119,7 @@ const EditorLogin = () => {
                   required
                   value={formData.password}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D90429] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C00000] focus:border-transparent"
                   placeholder="Enter your password"
                   data-testid="editor-password-input"
                 />
@@ -137,7 +137,7 @@ const EditorLogin = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-[#D90429] text-white hover:bg-[#B90322] rounded-full px-6 py-3 font-medium transition-all shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+              className="w-full bg-[#C00000] text-white hover:bg-[#8B0000] rounded-full px-6 py-3 font-medium transition-all shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               data-testid="editor-submit-btn"
             >
               {loading ? (
@@ -151,7 +151,7 @@ const EditorLogin = () => {
           <div className="mt-6 text-center">
             <button
               onClick={() => setIsLogin(!isLogin)}
-              className="text-[#D90429] hover:text-[#B90322] font-medium"
+              className="text-[#C00000] hover:text-[#8B0000] font-medium"
               data-testid="toggle-auth-mode-btn"
             >
               {isLogin ? "Don't have an account? Sign up" : 'Already have an account? Login'}

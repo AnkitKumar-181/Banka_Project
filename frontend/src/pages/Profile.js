@@ -17,7 +17,7 @@ const Profile = () => {
         <div className="space-y-4">
           <div className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
-              <User className="text-[#D90429]" size={24} />
+              <User className="text-[#C00000]" size={24} />
               <h2 className="font-serif text-2xl font-semibold text-slate-900">About Banka News</h2>
             </div>
             <p className="text-slate-600 leading-relaxed mb-2">
@@ -30,7 +30,7 @@ const Profile = () => {
 
           <div className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
-              <Info className="text-[#D90429]" size={24} />
+              <Info className="text-[#C00000]" size={24} />
               <h2 className="font-serif text-2xl font-semibold text-slate-900">Categories</h2>
             </div>
             <ul className="space-y-2 text-slate-600">
@@ -43,7 +43,7 @@ const Profile = () => {
 
           <div className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
-              <Settings className="text-[#D90429]" size={24} />
+              <Settings className="text-[#C00000]" size={24} />
               <h2 className="font-serif text-2xl font-semibold text-slate-900">Editor Access</h2>
             </div>
             <p className="text-slate-600 mb-4">
@@ -51,7 +51,7 @@ const Profile = () => {
             </p>
             <button
               onClick={() => navigate('/editor/login')}
-              className="bg-[#D90429] text-white hover:bg-[#B90322] rounded-full px-6 py-2.5 font-medium transition-all shadow-sm hover:shadow-md"
+              className="bg-[#C00000] text-white hover:bg-[#8B0000] rounded-full px-6 py-2.5 font-medium transition-all shadow-sm hover:shadow-md"
               data-testid="editor-login-btn"
             >
               Editor Login

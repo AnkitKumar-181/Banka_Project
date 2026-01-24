@@ -25,7 +25,7 @@ const EditorSidebar = () => {
     <div className="dashboard-sidebar">
       <div className="p-6 border-b border-gray-700">
         <Link to="/" className="flex items-center gap-2" data-testid="sidebar-home-link">
-          <Newspaper className="text-[#D90429]" size={28} />
+          <Newspaper className="text-[#C00000]" size={28} />
           <div>
             <h1 className="font-serif text-xl font-bold text-white">Banka News</h1>
             <p className="text-xs text-gray-400">Editor Panel</p>

@@ -17,7 +17,7 @@ const EditorLayout = ({ children }) => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <Loader2 className="animate-spin text-[#D90429]" size={48} />
+        <Loader2 className="animate-spin text-[#C00000]" size={48} />
       </div>
     );
   }

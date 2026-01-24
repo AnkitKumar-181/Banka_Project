@@ -26,7 +26,7 @@ const ArticleCard = ({ article, featured = false }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-white">
           <div className="flex items-center gap-2 mb-2">
-            <span className="text-xs uppercase tracking-wider bg-[#D90429] px-2 py-1 rounded-sm font-medium" data-testid={`article-category-${article.id}`}>
+            <span className="text-xs uppercase tracking-wider bg-[#C00000] px-2 py-1 rounded-sm font-medium" data-testid={`article-category-${article.id}`}>
               {article.category}
             </span>
             <span className="text-xs text-slate-300" data-testid={`article-time-${article.id}`}>

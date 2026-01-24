@@ -64,14 +64,14 @@ const ArticlesList = () => {
 
       {loading ? (
         <div className="flex items-center justify-center h-64">
-          <Loader2 className="animate-spin text-[#D90429]" size={48} />
+          <Loader2 className="animate-spin text-[#C00000]" size={48} />
         </div>
       ) : articles.length === 0 ? (
         <div className="bg-white rounded-xl border border-slate-100 shadow-sm p-12 text-center" data-testid="no-articles-message">
           <p className="text-slate-600 mb-4">No articles found</p>
           <button
             onClick={() => navigate('/editor/article/new')}
-            className="bg-[#D90429] text-white hover:bg-[#B90322] rounded-full px-6 py-2.5 font-medium transition-all"
+            className="bg-[#C00000] text-white hover:bg-[#8B0000] rounded-full px-6 py-2.5 font-medium transition-all"
             data-testid="create-article-btn"
           >
             Create Your First Article
@@ -116,7 +116,7 @@ const ArticlesList = () => {
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <span className="inline-block text-xs uppercase tracking-wider bg-[#D90429] text-white px-2 py-1 rounded-sm">
+                      <span className="inline-block text-xs uppercase tracking-wider bg-[#C00000] text-white px-2 py-1 rounded-sm">
                         {article.category}
                       </span>
                     </td>
@@ -135,7 +135,7 @@ const ArticlesList = () => {
                         </button>
                         <button
                           onClick={() => navigate(`/editor/article/edit/${article.id}`)}
-                          className="p-2 text-slate-600 hover:text-[#D90429] hover:bg-slate-100 rounded-lg transition-colors"
+                          className="p-2 text-slate-600 hover:text-[#C00000] hover:bg-slate-100 rounded-lg transition-colors"
                           title="Edit"
                           data-testid={`edit-article-${article.id}`}
                         >

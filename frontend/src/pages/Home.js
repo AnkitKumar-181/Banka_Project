@@ -33,7 +33,7 @@ const Home = () => {
       <div className="min-h-screen">
         <Navbar />
         <div className="flex items-center justify-center h-96">
-          <Loader2 className="animate-spin text-[#D90429]" size={48} />
+          <Loader2 className="animate-spin text-[#C00000]" size={48} />
         </div>
       </div>
     );

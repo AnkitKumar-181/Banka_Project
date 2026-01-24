@@ -48,13 +48,13 @@ const Search = () => {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="खबरें खोजें..."
-              className="w-full pl-12 pr-4 py-4 text-lg border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D90429] focus:border-transparent"
+              className="w-full pl-12 pr-4 py-4 text-lg border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C00000] focus:border-transparent"
               data-testid="search-input"
             />
           </div>
           <button
             type="submit"
-            className="mt-4 bg-[#D90429] text-white hover:bg-[#B90322] rounded-full px-8 py-3 font-medium transition-all shadow-sm hover:shadow-md"
+            className="mt-4 bg-[#C00000] text-white hover:bg-[#8B0000] rounded-full px-8 py-3 font-medium transition-all shadow-sm hover:shadow-md"
             disabled={loading}
             data-testid="search-submit-btn"
           >
@@ -64,7 +64,7 @@ const Search = () => {
 
         {loading && (
           <div className="flex items-center justify-center h-64">
-            <Loader2 className="animate-spin text-[#D90429]" size={48} />
+            <Loader2 className="animate-spin text-[#C00000]" size={48} />
           </div>
         )}
 
@@ -94,12 +94,12 @@ const Search = () => {
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                        <span className="absolute top-3 left-3 bg-[#D90429] px-2 py-1 rounded text-xs font-bold uppercase text-white">
+                        <span className="absolute top-3 left-3 bg-[#C00000] px-2 py-1 rounded text-xs font-bold uppercase text-white">
                           {article.category}
                         </span>
                       </div>
                       <div className="p-5">
-                        <h3 className="font-serif font-bold text-slate-900 text-lg line-clamp-2 mb-3 group-hover:text-[#D90429] transition-colors">
+                        <h3 className="font-serif font-bold text-slate-900 text-lg line-clamp-2 mb-3 group-hover:text-[#C00000] transition-colors">
                           {article.title}
                         </h3>
                         <p className="text-sm text-slate-600 line-clamp-2 mb-3">
