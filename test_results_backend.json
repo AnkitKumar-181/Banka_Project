@@ -1,0 +1,154 @@
+{
+  "summary": {
+    "total_tests": 24,
+    "passed_tests": 22,
+    "success_rate": 91.66666666666666,
+    "timestamp": "2026-01-24T05:45:43.552874"
+  },
+  "detailed_results": [
+    {
+      "test": "Invalid Login",
+      "success": true,
+      "details": "Status: 401",
+      "timestamp": "2026-01-24T05:45:42.789483"
+    },
+    {
+      "test": "Editor Login (Existing Account)",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-24T05:45:43.053863"
+    },
+    {
+      "test": "Create Article (No Auth)",
+      "success": false,
+      "details": "Status: 403 (Expected: 401), Response: {'detail': 'Not authenticated'}",
+      "timestamp": "2026-01-24T05:45:43.089038"
+    },
+    {
+      "test": "Cloudinary Signature (No Auth)",
+      "success": false,
+      "details": "Status: 403 (Expected: 401), Response: {'detail': 'Not authenticated'}",
+      "timestamp": "2026-01-24T05:45:43.127022"
+    },
+    {
+      "test": "Cloudinary Signature",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-24T05:45:43.166367"
+    },
+    {
+      "test": "Cloudinary Response Check",
+      "success": true,
+      "details": "All required fields present",
+      "timestamp": "2026-01-24T05:45:43.167013"
+    },
+    {
+      "test": "Get All Articles",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-24T05:45:43.206832"
+    },
+    {
+      "test": "Articles Count Check",
+      "success": true,
+      "details": "Found 4 articles",
+      "timestamp": "2026-01-24T05:45:43.207460"
+    },
+    {
+      "test": "Get Articles - Bihar",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-24T05:45:43.242887"
+    },
+    {
+      "test": "Category Filter - Bihar",
+      "success": true,
+      "details": "Found 1 articles",
+      "timestamp": "2026-01-24T05:45:43.243475"
+    },
+    {
+      "test": "Get Articles - Banka",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-24T05:45:43.278715"
+    },
+    {
+      "test": "Category Filter - Banka",
+      "success": true,
+      "details": "Found 1 articles",
+      "timestamp": "2026-01-24T05:45:43.279247"
+    },
+    {
+      "test": "Get Articles - Local News",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-24T05:45:43.312258"
+    },
+    {
+      "test": "Category Filter - Local News",
+      "success": true,
+      "details": "Found 1 articles",
+      "timestamp": "2026-01-24T05:45:43.312711"
+    },
+    {
+      "test": "Get Articles - Trending",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-24T05:45:43.346957"
+    },
+    {
+      "test": "Category Filter - Trending",
+      "success": true,
+      "details": "Found 1 articles",
+      "timestamp": "2026-01-24T05:45:43.347438"
+    },
+    {
+      "test": "Search Articles",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-24T05:45:43.380385"
+    },
+    {
+      "test": "Create Article",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-24T05:45:43.412374"
+    },
+    {
+      "test": "Get Single Article",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-24T05:45:43.446172"
+    },
+    {
+      "test": "Article Fields Check",
+      "success": true,
+      "details": "All required fields present",
+      "timestamp": "2026-01-24T05:45:43.446625"
+    },
+    {
+      "test": "Update Article",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-24T05:45:43.483447"
+    },
+    {
+      "test": "Delete Article",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-24T05:45:43.515512"
+    },
+    {
+      "test": "Get Single Article",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-24T05:45:43.552036"
+    },
+    {
+      "test": "Article Fields Check",
+      "success": true,
+      "details": "All required fields present",
+      "timestamp": "2026-01-24T05:45:43.552615"
+    }
+  ]
+}
