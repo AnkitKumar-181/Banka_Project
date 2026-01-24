@@ -151,7 +151,7 @@ const Home = () => {
                               {article.category}
                             </span>
                           </div>
-                          <h4 className="font-semibold text-sm text-slate-900 line-clamp-2 group-hover:text-[#D90429] transition-colors">
+                          <h4 className="font-semibold text-sm text-slate-900 line-clamp-2 group-hover:text-[#C00000] transition-colors">
                             {article.title}
                           </h4>
                           <span className="text-xs text-slate-500 mt-1 inline-block">
