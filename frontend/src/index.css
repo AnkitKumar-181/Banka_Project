@@ -35,7 +35,7 @@ code {
         --destructive-foreground: 0 0% 98%;
         --border: 214 32% 91%;
         --input: 214 32% 91%;
-        --ring: 349 92% 44%;
+        --ring: 0 100% 38%;
         --radius: 0.5rem;
     }
 }
