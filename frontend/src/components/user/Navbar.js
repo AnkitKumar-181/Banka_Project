@@ -9,20 +9,33 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   const categories = [
-    { name: 'Bihar', path: '/category/Bihar' },
     { name: 'Banka', path: '/category/Banka' },
+    { name: 'Bihar', path: '/category/Bihar' },
     { name: 'Local News', path: '/category/Local News' },
     { name: 'Trending', path: '/category/Trending' },
   ];
 
   return (
     <>
-      <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-200">
+      <div className="bg-[#D90429] text-white py-2">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="flex items-center justify-between text-sm">
+            <div className="flex items-center gap-2">
+              <span className="font-medium">ताज़ा खबरें | Banka से Bihar तक</span>
+            </div>
+            <div className="hidden md:block text-xs">
+              <span>Banka ki Awaaz | Bihar ka Vishwasniya News Portal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav className="sticky top-0 z-40 bg-white border-b-2 border-slate-200">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center" data-testid="nav-home-link">
-              <h1 className="font-serif text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
-                Baka News
+              <h1 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
+                Banka News
               </h1>
             </Link>
 
@@ -32,8 +45,8 @@ const Navbar = () => {
                   <Link
                     key={cat.name}
                     to={cat.path}
-                    className={`text-sm font-medium transition-colors ${
-                      isActive(cat.path) ? 'text-[#D90429]' : 'text-slate-600 hover:text-slate-900'
+                    className={`text-sm font-semibold uppercase tracking-wide transition-colors ${
+                      isActive(cat.path) ? 'text-[#D90429] border-b-2 border-[#D90429] pb-1' : 'text-slate-700 hover:text-[#D90429]'
                     }`}
                     data-testid={`nav-category-${cat.name.toLowerCase().replace(' ', '-')}`}
                   >
